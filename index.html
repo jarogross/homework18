@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulačka</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Kalkulačka</h1>
+    <label>Číslo 1:</label>
+    <input type="number" id="number1" />
+    <br />
+    <label>Číslo 2:</label>
+    <input type="number" id="number2" />
+    <br />
+    <label>Operácia:</label>
+    <select id="operation">
+        <option value="scitaj">+</option>
+        <option value="odcitaj">-</option>
+        <option value="nasob">*</option>
+        <option value="vydel">/</option>
+        <option value="ine">Iná operácia</option>
+    </select>
+    <br />
+    <button onclick="calculate()">=</button>
+    <br />
+    <label>Výsledok:</label>
+    <input type="text" id="vysledok" readonly />
+    <br />
+    <label>Pamäť:</label>
+    <input type="text" id="memory" readonly />
+</body>
+</html>
